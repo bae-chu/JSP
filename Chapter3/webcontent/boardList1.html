@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>2페이지 목록 요청하기</h1>
+	<script>
+	
+		var page=1;
+		var list=100;
+		var size=10;
+		var pagesize=list/size;
+		
+		for(var i=1; i<=size; i++){
+			document.write(i+(page-1)*size+"<br>");
+		}
+		for(var i=1; i<=pagesize; i++){
+			document.write("<a href='boardList1?page="+i+"&size="+size+"'>"+i+"</a> ");
+		}	
+	</script>
+
+</body>
+</html>

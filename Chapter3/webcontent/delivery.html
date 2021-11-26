@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	h1 {	
+		text-align:center;
+		margin:auto;}
+	#area {
+		text-align :center;
+		border : 2px solid red;
+		width : 300px;
+		padding : 10px;
+		margin : auto;		
+		}
+	
+</style>
+</head>
+<body>
+	<h1>배송지</h1>
+	<section id="area">
+	<form action="delivery" method="post">
+		<label id="addr">배송지<br>받을주소 : <br></label>
+		<input type="text" name="addr" id="addr"/><br>
+		<label id="name">받는 사람<br></label>
+		<input type="text" name="name" id="name"/><br>
+		<input type="submit" value="Post방식 전송"/><br>
+		<br>	
+	</form>
+	<form action="delivery" method="get">
+		<label id="tel">전화<br>전화번호 : </label><br>
+		<input type="text" name="tel" id="tel"/><br>
+		<input type="submit" value="Get방식 전송">
+	</form>
+	</section>
+	
+
+</body>
+</html>
