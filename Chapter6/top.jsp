@@ -7,7 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="login.jsp">Login</a>
-<a href="join.jsp">Join</a>
+<%
+if(session.getAttribute("id") == null){
+%>
+	<a href="template.jsp?page=login">Login</a> | 
+	<a href="template.jsp?page=join">Join</a>
+<%} else{%>
+	<%=session.getAttribute("id") %>님  환영합니다.
+	<a href="logout.jsp">logout</a>
+<%} %>
 </body>
 </html>
