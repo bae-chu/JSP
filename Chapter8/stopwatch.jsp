@@ -39,7 +39,7 @@
 		var secArr = sec.toString().split(".");
 		secArr[0]=addZero(secArr[0],2);
 		
-		sec=secArr[0] + "." + sec.Arr[1];
+		sec=secArr[0] + "." + secArr[1];
 		
 		document.getElementById('time_out').innerHTML = min + " : " + sec;
 	}
