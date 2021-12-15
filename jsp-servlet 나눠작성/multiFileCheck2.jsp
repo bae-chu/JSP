@@ -6,7 +6,7 @@
 	String subject = request.getParameter("subject");
 	String[] filename1 = request.getParameterValues("filename1");
 	String[] origfilename1 = request.getParameterValues("origfilename1");
-	//파일을 getParameter 말고 getParameterValues 로 받아주고, String은 배열처리[]해줘야 함. 
+	//파일을 getParameter 말고 getParameterValues 로 받아주고, String은 배열처리[]해줘야 함.  
 %>
 <!DOCTYPE html>
 <html>
