@@ -7,7 +7,8 @@
 
 	String driver = "com.mysql.jdbc.Driver";
 	String url = "jdbc:mysql://localhost:3306/testDB";
-	
+//	서버타임존 오류가 뜨는경우가 간혹 있음. 그때는 아래와같이 입력.
+//	String url = "jdbc:mysql://localhost:3306/testDB?serverTimezone=Asia/Seoul";
 	Boolean connect = false;
 	
 	try{
