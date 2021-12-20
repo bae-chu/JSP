@@ -21,6 +21,7 @@
 		connect=false;
 		e.printStackTrace();
 	}
+	//실행시켰을때 하단 console 창에 아무것도 안떠야 정상임.
 %>    
 <!DOCTYPE html>
 <html>
