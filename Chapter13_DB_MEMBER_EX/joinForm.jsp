@@ -32,14 +32,18 @@
 </head>
 <body>
 <form action="joinProcess.jsp" name="joinform" method="post">
+
 <table border=1>
+
 	<tr>
 		<td colspan="2" class="td_title"> 회원 가입 페이지 </td>
 	</tr>
 	<tr>
 		<td><label for="id">아이디 : </label></td>
 		<td><input type="text" name="id" id="id">
-			<input type="button" name="idcheck" id="idcheck" value="아이디 중복확인">
+			
+			<input type="button" name="idcheck" id="idcheck" value="아이디 중복확인" 
+				onclick="window.open('idCheck.jsp?openInit=true','','width=300, height=200')">			
 		</td>
 	</tr>
 	<tr>
