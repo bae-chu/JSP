@@ -6,14 +6,14 @@
 <%
 	String id = null;
 	
-	if((session.getAttribute("id")==null) || //id가 있는지 보고, or 
+if((session.getAttribute("id")==null) || //id가 있는지 보고, or 
 			(!((String)session.getAttribute("id")).equals("admin"))){ 
 		//id가 admin이면 들어가짐(관리자모드)
-		out.println("<script>");
-		out.println("alert('관리자로 로그인하세요')"); //관리자로 로그인 안하면 뜸 
-		out.println("location.href='loginForm.jsp'");
-		out.println("</script>");
-	}
+	out.println("<script>");
+	out.println("alert('관리자로 로그인하세요')"); //관리자로 로그인 안하면 뜸 
+	out.println("location.href='loginForm.jsp'");
+	out.println("</script>");
+	}else{
 	
 	Connection conn = null;
 	PreparedStatement pstmt = null;
@@ -96,5 +96,6 @@ function deleteChk(id) {
 			e.printStackTrace();
 		}
 	}
+}
 %>
 </html>
