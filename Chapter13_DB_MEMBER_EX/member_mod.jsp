@@ -10,7 +10,7 @@
 	if((session.getAttribute("id")==null) || (!((String)session.getAttribute("id")).equals("admin"))){
 		//id가 없거나(로그인을 안했거나) || 관리자가 admin이 아니면 다시 로그인 하시오
 		if(!((String)session.getAttribute("id")).equals(request.getParameter("id"))){
-			
+		//지가 지아이디 찾아갔는가 보고	
 		out.println("<script>");
 		out.println("alert('관리자로 로그인하세요');");
 		out.println("location.href='loginForm.jsp';");
